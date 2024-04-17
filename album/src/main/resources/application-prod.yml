@@ -7,8 +7,8 @@ album:
     username: root
     password: root
 
-    OSS:
-      endpoint: oss-cn-beijing.aliyuncs.com
-      access-key-id: your-access-key-id
-      access-key-secret: your-access-key-secret
-      bucket-name: your-bucket-name
+  OSS:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    accessKeyId: your-access-key-id
+    accessKeySecret: your-access-key-secret
+    bucketName: your-bucket-name
