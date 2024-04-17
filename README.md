@@ -27,7 +27,7 @@
 <image src="./gif/index.gif" width="840px"/> 
 
 
-本地默认进入url：http://localhost:8012/album/index
+本地默认进入url：http://localhost:8888/album/index
 
 #### 主要功能
 
