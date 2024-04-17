@@ -41,7 +41,7 @@ spring:
 #    show-sql: true
 
 OSS:
-  endpoint: ""
-  accessKeyId: ""
-  accessKeySecret: ""
-  bucketName: ""
+  endpoint: ${album.alioss.endpoint}
+  access-key-id: ${album.alioss.access-key-id}
+  access-key-secret: ${album.alioss.access-key-secret}
+  bucket-name: ${album.alioss.bucket-name}
