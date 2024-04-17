@@ -29,3 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+**/target/
+*.class
+*Test.java
+**/test/

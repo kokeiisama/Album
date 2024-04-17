@@ -1,39 +1,9 @@
-server:
-  port: 8012
-  servlet:
-    session:
-      timeout: 20m
-spring:
-  application:
-    name: util
-  mvc:
-    view:
-      prefix: classpath:/templates/
-      suffix: html
-    favicon:
-      enabled: false
-  thymeleaf:
-    cache: false
-    prefix: classpath:/templates/
-    suffix: .html
-  servlet:
-    multipart:
-      maxFileSize: 25MB
+album:
   datasource:
-    url: jdbc:mysql://localhost:3306/album?serverTimezone=CTT&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: album
     username: root
-    password: 123456
-  jpa:
-#    properties:
-#      hibernate:
-#        hbm2ddl:
-#          auto: update
-#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    show-sql: false
+    password: root
 
-OSS:
-  endpoint: ""
-  accessKeyId: ""
-  accessKeySecret: "
-  bucketName: ""

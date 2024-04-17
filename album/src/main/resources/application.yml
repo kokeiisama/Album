@@ -1,9 +1,11 @@
 server:
-  port: 8012
+  port: 8888
   servlet:
     session:
       timeout: 20m
 spring:
+  profiles:
+    active: dev
   application:
     name: util
   mvc:
@@ -17,11 +19,19 @@ spring:
   servlet:
     multipart:
       maxFileSize: 25MB
+
   datasource:
-    url: jdbc:mysql://localhost:3306/album?serverTimezone=CTT&useSSL=false
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: root
+#    druid:
+      driver-class-name: ${album.datasource.driver-class-name}
+      url: jdbc:mysql://${album.datasource.host}:${album.datasource.port}/${album.datasource.database}?serverTimezone=CTT&useSSL=false
+      username: ${album.datasource.username}
+      password: ${album.datasource.password}
+
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/album?serverTimezone=CTT&useSSL=false
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: 123456
   jpa:
 #    properties:
 #      hibernate:
